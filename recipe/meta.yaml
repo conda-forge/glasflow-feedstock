@@ -29,6 +29,7 @@ test:
   requires:
     - pip
     - pytest >=6.0.0
+    - pytest-requires
     - pytest-rerunfailures
   imports:
     - glasflow
