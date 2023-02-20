@@ -1,5 +1,5 @@
 {% set name = "glasflow" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/glasflow-{{ version }}.tar.gz
-  sha256: e1ff8420c20c63a3b479f0141708ab5e00a0a39f1226fe324c428528c841cc5b
+  sha256: 53ab35a763b7e198be430e55a50efb6477abd82d260748c404bf70eee0aad9e6 
 
 build:
   noarch: python
@@ -23,12 +23,13 @@ requirements:
   run:
     - numpy
     - python >=3.7
-    - pytorch >=1.9
+    - pytorch >=1.11.0
 
 test:
   requires:
     - pip
     - pytest >=6.0.0
+    - pytest-requires
     - pytest-rerunfailures
   imports:
     - glasflow
