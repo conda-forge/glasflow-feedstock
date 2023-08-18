@@ -1,11 +1,11 @@
-About glasflow
-==============
+About glasflow-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/glasflow-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/igr-ml/glasflow
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/glasflow-feedstock/blob/main/LICENSE.txt)
 
 Summary: Normalising flows using nflows
 

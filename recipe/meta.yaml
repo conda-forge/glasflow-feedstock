@@ -1,5 +1,5 @@
 {% set name = "glasflow" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/glasflow-{{ version }}.tar.gz
-  sha256: 53ab35a763b7e198be430e55a50efb6477abd82d260748c404bf70eee0aad9e6 
+  sha256: 605e230b1859252461d31808c88714508e8fc283660dc6483e2c815ca4ae2be3
 
 build:
   noarch: python
@@ -43,7 +43,7 @@ test:
 about:
   home: https://github.com/igr-ml/glasflow
   summary: Normalising flows using nflows
-  description: | 
+  description: |
     glasflow is a Python library containing a collection of normalising flows
     implemented using PyTorch and nflows.
   license: MIT
