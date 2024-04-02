@@ -1,5 +1,5 @@
 {% set name = "glasflow" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/glasflow-{{ version }}.tar.gz
-  sha256: 605e230b1859252461d31808c88714508e8fc283660dc6483e2c815ca4ae2be3
+  sha256: d8727e64fd8d517598b27844807a9c8d3b3b3770bd0e3656e7efcbc85927ab80
 
 build:
   noarch: python
