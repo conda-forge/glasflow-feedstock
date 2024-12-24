@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/glasflow-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/glasflow-{{ version }}.tar.gz
   sha256: e97eaf549743bc4ca6d05434f89ea93102f429f56322a490fca3888c44522c3d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=64.0.3
     - setuptools-scm
   run:
     - numpy
-    - python >=3.7
+    - python >={{ python_min }}
     - pytorch >=1.11.0
 
 test:
@@ -31,6 +31,7 @@ test:
     - pytest >=6.0.0
     - pytest-requires
     - pytest-rerunfailures
+    - python {{ python_min }}
   imports:
     - glasflow
   source_files:
